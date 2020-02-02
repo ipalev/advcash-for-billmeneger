@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mgrdata>
+  <plugin name="pmAdvCash.php">
+    <group>payment_method</group>
+    <msg name="desc_short" lang="ru">AdvCash</msg>
+    <msg name="desc_short" lang="en">AdvCash</msg>
+    <msg name="desc_full" lang="ru">Палтежная система AdvCash</msg>
+    <msg name="desc_full" lang="en">Payment system AdvCash</msg>
+  </plugin>
+
+  <metadata name="paymethod.edit.AdvCash.php" type="form">
+    <form>
+      <page name="methodprops">
+        <field name="ac_account_email">
+          <input name="ac_account_email" private="yes" required="yes" type="text"/>
+        </field>
+        <field name="ac_sci_name">
+          <input name="ac_sci_name" private="yes" required="yes" type="text"/>
+        </field>
+        <field name="return_url">
+          <input name="return_url" private="yes" required="yes" type="text"/>
+        </field>
+        <field name="secret">
+          <input name="secret" private="yes" required="no" type="text"/>
+        </field>
+        <field name="api_name">
+          <input name="api_name" private="yes" required="yes" type="text"/>
+        </field>
+        <field name="api_pass">
+          <input name="api_pass" private="yes" required="yes" type="text"/>
+        </field>
+      </page>
+    </form>
+  </metadata>
+
+  <lang name="en">
+    <messages name="label_paymethod">
+      <msg name="pmAdvCash.php">AdvCash</msg>
+      <msg name="module_pmAdvCash.php">AdvCash</msg>
+    </messages>
+    <messages name="paymethod.edit.AdvCash.php">
+      <msg name="ac_account_email">account email</msg>
+      <msg name="hint_ac_account_email">Specify the mail attached to your wallet</msg>
+      <msg name="ac_sci_name">sci name</msg>
+      <msg name="hint_ac_sci_name">Enter the name of your store</msg>
+      <msg name="return_url">return  url</msg>
+      <msg name="hint_return_url">Successful or Failed and Status payment page</msg>
+      <msg name="secret">secret SCI</msg>
+      <msg name="hint_secret">secret password SCI</msg>
+      <msg name="api_name">Name API</msg>
+      <msg name="hint_api_name">The name of the API for withdrawing money to customers</msg>
+      <msg name="api_pass">Password API</msg>
+      <msg name="hint_api_pass">Password API for withdrawing money to customers</msg>
+      
+    </messages>
+    <messages name="payment.edit.AdvCash.php">
+    </messages>
+  </lang>
+
+  <lang name="ru">
+    <messages name="label_paymethod">
+      <msg name="pmAdvCash.php">AdvCash</msg>
+      <msg name="module_pmAdvCash.php">AdvCash</msg>
+    </messages>
+    <messages name="paymethod.edit.AdvCash.php">
+      <msg name="ac_account_email">Маил кошелька</msg>
+      <msg name="hint_ac_account_email">Укажите маил привязанный к вашему кошелькуI</msg>
+      <msg name="ac_sci_name">Название магазина</msg>
+      <msg name="hint_ac_sci_name">Укажите название своего магазина</msg>
+      <msg name="return_url">url возврата</msg>
+      <msg name="hint_return_url">Страница статуса и успешной или ошибочной оплаты</msg>
+      <msg name="secret">пароль SCI</msg>
+      <msg name="hint_secret">секретный пароль SCI</msg>
+      <msg name="api_name">Название API</msg>
+      <msg name="hint_api_name">Название API для вывода средств клиентам</msg>
+      <msg name="api_pass">Пароль API</msg>
+      <msg name="hint_api_pass">Пароль API  для вывода средств клиентам</msg>
+            
+    </messages>
+    <messages name="payment.edit.AdvCash.php">
+    </messages>
+  </lang>
+</mgrdata>
